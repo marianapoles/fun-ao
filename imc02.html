@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculaIMC(peso, altura) { // Declaraçao da funçao 
+            var imc = peso / (altura * altura);
+            return imc;
+        }
+
+        function mostra(frase) { //Declaração da função.
+            document.write(frase + "<br>");
+        }
+
+        var peso = 75;
+        var altura = 1.72;
+
+        var imc = calculaIMC(peso, altura);
+        mostra("O IMC calculado é de: " + imc);
+        mostra("A diferença entre o meu IMC e o da obesidade severa é de:" + (35 - imc).toFixed(2));
+
+    </script>
+</body>
+
+</html>
